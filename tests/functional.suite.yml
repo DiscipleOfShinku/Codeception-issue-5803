@@ -9,5 +9,8 @@
 class_name: FunctionalTester
 modules:
     enabled:
-      - Filesystem
-      - Yii2
+        - Yii2
+        - Db:
+            dsn: 'mysql:host=localhost;dbname=codeception-issue-5803'
+            user: 'root'
+            password:
